@@ -18,4 +18,5 @@
 - Bootstrap -> formatting
 
 ## Refactor TODS
+- Add full name for users
 - User association integration test in post_spec
