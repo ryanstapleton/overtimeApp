@@ -22,3 +22,4 @@
 
 ## Refactor TODS
 - [ ] User association integration test in post_spec
+- [ ] Refactor pasts/_form for admin user with status
