@@ -24,3 +24,4 @@
 - [ ] User association integration test in post_spec
 - [ ] Refactor pasts/_form for admin user with status
 - [ ] Fix post_spec.rb:82 to use factories
+- [ ] Fic post_spec.rb:52 to have correct user references without having to update
