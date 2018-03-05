@@ -21,5 +21,4 @@
 - [x] Icons from glyphicons
 - [x] Update the styles for forms
 
-## Refactor TODS
-- [ ] Integrate validation for phone attr in user:
+## TODS
