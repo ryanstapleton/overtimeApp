@@ -22,4 +22,4 @@
 - [x] Update the styles for forms
 
 ## Refactor TODS
-- [x] Refactor pasts/_form for admin user with status
+- [ ] Integrate validation for phone attr in user:
