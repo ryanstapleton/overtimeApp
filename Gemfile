@@ -65,3 +65,4 @@ gem 'administrate', '~> 0.9.0' # Admin functionality
 gem 'bourbon', '~> 5.0' # Styles for administrate - kind of necessary for administrate to work right
 
 gem 'pundit', '~> 1.1'
+gem 'twilio-ruby', '~> 5.7'
