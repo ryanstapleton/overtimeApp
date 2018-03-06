@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'navigate' do
-  let(:user) { FactoryGirl.create(:user) }
+  let(:user) { FactoryBot.create(:user) }
 
   let(:post) do
     Post.create(date: Date.today, rationale: "Rationale", user_id: user.id, overtime_request: 3.5)
@@ -25,10 +25,12 @@ describe 'navigate' do
   	end
 
     it 'has a list of posts' do
-      post1 = FactoryGirl.build_stubbed(:post)
-      post2 = FactoryGirl.build_stubbed(:second_post)
+      post1 = FactoryBot.build_stubbed(:post)
+      post2 = FactoryBot.build_stubbed(:second_post)
+      # post1 = Post.create(date: Date.today, rationale: "Some puppies", overtime_request: 3.5, user_id: user.id)
+      # post2 = Post.create(date: Date.today, rationale: "Some content", overtime_request: 3.5, user_id: user.id)
       visit posts_path
-      expect(page).to have_content(/Rationale|content/)
+      expect(page).to have_content(/puppies|content/)
     end
 
     it 'has a scope so that only post creators can see their posts' do  
@@ -54,7 +56,7 @@ describe 'navigate' do
     it 'can be deleted' do
       logout(:user)
 
-      delete_user = FactoryGirl.create(:user)
+      delete_user = FactoryBot.create(:user)
       login_as(delete_user, :scope => :user)
 
       post_to_delete = Post.create(date: Date.today, rationale: 'asdf', user_id: delete_user.id, overtime_request: 3.5)
@@ -106,7 +108,7 @@ describe 'navigate' do
 
     it 'cannot be edited by a non authorized user' do
       logout(:user)
-      non_authorized_user = FactoryGirl.create(:non_authorized_user)
+      non_authorized_user = FactoryBot.create(:non_authorized_user)
       login_as(non_authorized_user, :scope => :user)
 
       visit edit_post_path(post)

@@ -1,7 +1,7 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :post do
     date Date.today
-    rationale "Some Rationale"
+    rationale "Some puppies"
     overtime_request 3.5
     user
   end
