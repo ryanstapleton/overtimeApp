@@ -65,5 +65,7 @@ gem 'gritter', '~> 1.2'
 gem 'administrate', '~> 0.9.0' # Admin functionality
 gem 'bourbon', '~> 5.0' # Styles for administrate - kind of necessary for administrate to work right
 
-gem 'pundit', '~> 1.1'
-gem 'twilio-ruby', '~> 5.7'
+gem 'pundit', '~> 1.1' # Authorization
+gem 'twilio-ruby', '~> 5.7' # SMS API
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1' # Pagination
