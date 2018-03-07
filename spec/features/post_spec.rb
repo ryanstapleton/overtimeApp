@@ -25,10 +25,10 @@ describe 'navigate' do
   	end
 
     it 'has a list of posts' do
-      post1 = FactoryBot.build_stubbed(:post)
-      post2 = FactoryBot.build_stubbed(:second_post)
-      # post1 = Post.create(date: Date.today, rationale: "Some puppies", overtime_request: 3.5, user_id: user.id)
-      # post2 = Post.create(date: Date.today, rationale: "Some content", overtime_request: 3.5, user_id: user.id)
+      # post1 = FactoryBot.build_stubbed(:post)
+      # post2 = FactoryBot.build_stubbed(:second_post)
+      post1 = Post.create(date: Date.today, rationale: "Some puppies", overtime_request: 3.5, user_id: user.id)
+      post2 = Post.create(date: Date.today, rationale: "Some content", overtime_request: 3.5, user_id: user.id)
       visit posts_path
       expect(page).to have_content(/puppies|content/)
     end
