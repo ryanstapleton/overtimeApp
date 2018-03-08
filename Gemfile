@@ -69,5 +69,6 @@ gem 'pundit', '~> 1.1' # Authorization
 gem 'twilio-ruby', '~> 5.7' # SMS API
 
 gem 'kaminari', '~> 1.1', '>= 1.1.1' # Pagination
+gem 'rails_12factor' # heroku/rails options
 
 ruby '2.4.1'
