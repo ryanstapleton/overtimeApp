@@ -22,8 +22,8 @@
 - [x] Update button text to include date range
 - [x] Update button sort order on employee homepage
 - [x] Remove unnecessary navbar buttons for managers
-- [ ] fix admin dashboard bug
-- [ ] Implement honeybadger for error reporting
+- [x] fix admin dashboard bug
+- [ ] Implement honeybadger for error reporting (optional)
 - [ ] Implement new relic to keep the site alive
 
 ## UI:
